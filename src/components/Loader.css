@@ -1,0 +1,53 @@
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+.animated-text {
+  font-size: 24px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .loader-container {
+    height: 400px;
+  }
+}
+
+@media (max-width: 430px) {
+  .loader-container {
+    height: 80px;
+  }
+}
+.loader-svg {
+  width: 100px;
+  height: auto;
+  animation: spin 3s linear infinite;
+}
+
+.cls-1 {
+  fill: #ef6827;
+}
+
+.cls-2 {
+  fill: #149585;
+}
+
+.cls-3 {
+  fill: #f0a91f;
+}
+
+.cls-4 {
+  fill: #5c58a5;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
